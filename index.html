@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image slider using html and css</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="product-showcase.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ps-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50px;
+            margin-left: 10px;
+            display: inline-block;
+            position: relative;
+            z-index: 100;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            border: 4px solid #fff;
+            margin-top: 30px;
+        }
+
+        .product-showcase {
+            position: relative;
+            overflow: hidden;
+            margin: 0px auto;
+        }
+
+        .ps-layer {
+            position: static;
+            width: 100%;
+        }
+
+        .ps-icon-wrapper {
+            display: inline-block;
+            background-color: transparent;
+            position: absolute;
+            z-index: 101;
+            width: 100%;
+            left: 0;
+            bottom: 40px;
+            box-sizing: border-box;
+        }
+
+        .ps-icon-box {
+            display: inline-block;
+            padding-bottom: 6px;
+            padding-top: 6px;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+        $(".product-showcase").productShowcase({
+            maxHeight:"768px",
+            width:"100%",
+            iconSize:"90px"
+        });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="product-showcase">
+        <div class="ps-icon" data-icon="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?cs=srgb&dl=audi-automobile-car-lights-1149831.jpg&fm=jpg" 
+        
+            data-image="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?cs=srgb&dl=audi-automobile-car-lights-1149831.jpg&fm=jpg">
+        </div>
+
+        <div class="ps-icon" data-icon="https://images.pexels.com/photos/244212/pexels-photo-244212.jpeg?cs=srgb&dl=audi-automobile-automotive-244212.jpg&fm=jpg" 
+        
+            data-image="https://images.pexels.com/photos/244212/pexels-photo-244212.jpeg?cs=srgb&dl=audi-automobile-automotive-244212.jpg&fm=jpg">
+        </div>
+
+        <div class="ps-icon" data-icon="https://images.pexels.com/photos/244207/pexels-photo-244207.jpeg?cs=srgb&dl=audi-automobile-automotive-244207.jpg&fm=jpg" 
+        
+            data-image="https://images.pexels.com/photos/244207/pexels-photo-244207.jpeg?cs=srgb&dl=audi-automobile-automotive-244207.jpg&fm=jpg">
+        </div>
+    </div>
+</body>
+</html>
