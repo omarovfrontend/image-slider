@@ -1,3 +1,3 @@
 # image slader
 
-Demo - https://omarov-frontend.github.io/image-slider/
+Demo - https://omarovfrontend.github.io/image-slider/
